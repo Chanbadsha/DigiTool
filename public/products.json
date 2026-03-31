@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "AI Resume Builder",
-        "description": "Create job-winning resumes with AI-powered suggestions and modern templates.",
+        "description": "Create job-winning resumes with AI-powered suggestions and modern templates. Customize every section easily, optimize for applicant tracking systems, and export polished resumes that stand out to recruiters across different industries.",
         "price": 12,
         "period": "monthly",
         "tag": "popular",
@@ -10,14 +10,16 @@
         "features": [
             "ATS-friendly templates",
             "AI suggestions",
-            "Export to PDF"
+            "Export to PDF",
+            "Custom sections",
+            "Real-time preview"
         ],
         "icon": "📄"
     },
     {
         "id": 2,
         "name": "Website Builder Pro",
-        "description": "Build responsive websites without coding using drag-and-drop tools.",
+        "description": "Build responsive websites without coding using drag-and-drop tools. Choose from professionally designed templates, customize layouts visually, and publish your site with hosting and domain support included.",
         "price": 99,
         "period": "yearly",
         "tag": "best seller",
@@ -25,14 +27,16 @@
         "features": [
             "Drag & drop editor",
             "Free hosting",
-            "Custom domain"
+            "Custom domain",
+            "Responsive templates",
+            "SEO settings"
         ],
         "icon": "🌐"
     },
     {
         "id": 3,
         "name": "SEO Optimizer Toolkit",
-        "description": "Boost your website ranking with advanced SEO insights and tracking.",
+        "description": "Boost your website ranking with advanced SEO insights and tracking. Analyze keywords, monitor competitors, and improve on-page SEO performance using actionable recommendations and real-time reports.",
         "price": 15,
         "period": "monthly",
         "tag": "popular",
@@ -40,14 +44,16 @@
         "features": [
             "Keyword tracking",
             "Site audit",
-            "Competitor analysis"
+            "Competitor analysis",
+            "Backlink checker",
+            "SEO reports"
         ],
         "icon": "🔍"
     },
     {
         "id": 4,
         "name": "Social Media Scheduler",
-        "description": "Plan, schedule, and automate posts across all major platforms.",
+        "description": "Plan, schedule, and automate posts across all major platforms. Manage multiple accounts, visualize content with a calendar view, and track engagement performance to grow your audience efficiently.",
         "price": 10,
         "period": "monthly",
         "tag": "new",
@@ -55,14 +61,16 @@
         "features": [
             "Multi-platform posting",
             "Calendar view",
-            "Analytics"
+            "Analytics",
+            "Auto scheduling",
+            "Post preview"
         ],
         "icon": "📅"
     },
     {
         "id": 5,
         "name": "Email Marketing Pro",
-        "description": "Create high-converting email campaigns with automation tools.",
+        "description": "Create high-converting email campaigns with automation tools. Design beautiful emails, segment your audience, and track campaign performance with detailed analytics to maximize conversions.",
         "price": 20,
         "period": "monthly",
         "tag": "best seller",
@@ -70,14 +78,16 @@
         "features": [
             "Automation workflows",
             "Templates",
-            "Performance analytics"
+            "Performance analytics",
+            "Audience segmentation",
+            "A/B testing"
         ],
         "icon": "📧"
     },
     {
         "id": 6,
         "name": "UI Design System Kit",
-        "description": "Pre-built UI components and design systems for faster development.",
+        "description": "Pre-built UI components and design systems for faster development. Use ready-made assets, maintain design consistency, and speed up your workflow with reusable and scalable design elements.",
         "price": 49,
         "period": "one-time",
         "tag": "popular",
@@ -85,14 +95,16 @@
         "features": [
             "Figma components",
             "Dark mode",
-            "Reusable assets"
+            "Reusable assets",
+            "Design tokens",
+            "Responsive layouts"
         ],
         "icon": "🎨"
     },
     {
         "id": 7,
         "name": "AI Content Generator",
-        "description": "Generate blogs, ads, and social media content in seconds.",
+        "description": "Generate blogs, ads, and social media content in seconds. Save time on writing, produce high-quality content ideas, and customize outputs for different platforms and audiences easily.",
         "price": 18,
         "period": "monthly",
         "tag": "popular",
@@ -100,14 +112,16 @@
         "features": [
             "Blog writing",
             "Ad copy",
-            "Social captions"
+            "Social captions",
+            "Tone control",
+            "Multi-language support"
         ],
         "icon": "🤖"
     },
     {
         "id": 8,
         "name": "Cloud Storage Plus",
-        "description": "Secure cloud storage with fast access and file sharing.",
+        "description": "Secure cloud storage with fast access and file sharing. Store your files safely, sync across devices, and share documents easily with advanced privacy and backup features.",
         "price": 8,
         "period": "monthly",
         "tag": "best seller",
@@ -115,14 +129,16 @@
         "features": [
             "100GB storage",
             "Secure sharing",
-            "Auto backup"
+            "Auto backup",
+            "File versioning",
+            "Cross-device sync"
         ],
         "icon": "☁️"
     },
     {
         "id": 9,
         "name": "Freelancer Toolkit",
-        "description": "All-in-one toolkit for freelancers to manage clients and projects.",
+        "description": "All-in-one toolkit for freelancers to manage clients and projects. Create invoices, send proposals, and organize client communication efficiently to grow your freelance business.",
         "price": 39,
         "period": "one-time",
         "tag": "new",
@@ -130,14 +146,16 @@
         "features": [
             "Invoice generator",
             "Proposal templates",
-            "Client CRM"
+            "Client CRM",
+            "Expense tracking",
+            "Contract templates"
         ],
         "icon": "🧑‍💻"
     },
     {
         "id": 10,
         "name": "Code Snippet Manager",
-        "description": "Organize and reuse your code snippets efficiently.",
+        "description": "Organize and reuse your code snippets efficiently. Store frequently used code, search quickly with tags, and sync across devices to improve your development workflow.",
         "price": 7,
         "period": "monthly",
         "tag": "popular",
@@ -145,14 +163,16 @@
         "features": [
             "Syntax highlighting",
             "Search & tags",
-            "Cloud sync"
+            "Cloud sync",
+            "Snippet sharing",
+            "Version history"
         ],
         "icon": "💻"
     },
     {
         "id": 11,
         "name": "Analytics Dashboard Pro",
-        "description": "Track and visualize your business data in real-time.",
+        "description": "Track and visualize your business data in real-time. Build custom dashboards, monitor key metrics, and generate reports to make data-driven decisions quickly.",
         "price": 25,
         "period": "monthly",
         "tag": "best seller",
@@ -160,14 +180,16 @@
         "features": [
             "Real-time data",
             "Custom charts",
-            "Export reports"
+            "Export reports",
+            "Data integration",
+            "Alerts & notifications"
         ],
         "icon": "📊"
     },
     {
         "id": 12,
         "name": "Password Manager Secure",
-        "description": "Store and manage your passwords with top-level encryption.",
+        "description": "Store and manage your passwords with top-level encryption. Keep your accounts safe, auto-fill credentials securely, and access your data across multiple devices.",
         "price": 5,
         "period": "monthly",
         "tag": "popular",
@@ -175,14 +197,16 @@
         "features": [
             "End-to-end encryption",
             "Auto-fill",
-            "Multi-device sync"
+            "Multi-device sync",
+            "Password generator",
+            "Secure vault"
         ],
         "icon": "🔐"
     },
     {
         "id": 13,
         "name": "Online Course Builder",
-        "description": "Create and sell online courses easily.",
+        "description": "Create and sell online courses easily. Upload videos, manage students, and integrate payments to build a complete e-learning platform.",
         "price": 79,
         "period": "yearly",
         "tag": "new",
@@ -190,14 +214,16 @@
         "features": [
             "Video hosting",
             "Student management",
-            "Payment integration"
+            "Payment integration",
+            "Course builder",
+            "Progress tracking"
         ],
         "icon": "🎓"
     },
     {
         "id": 14,
         "name": "Project Management Tool",
-        "description": "Manage tasks, teams, and deadlines efficiently.",
+        "description": "Manage tasks, teams, and deadlines efficiently. Use boards, collaborate with your team, and track progress to ensure projects are delivered on time.",
         "price": 14,
         "period": "monthly",
         "tag": "best seller",
@@ -205,14 +231,16 @@
         "features": [
             "Kanban boards",
             "Team collaboration",
-            "Deadline tracking"
+            "Deadline tracking",
+            "Task assignment",
+            "Progress reports"
         ],
         "icon": "📌"
     },
     {
         "id": 15,
         "name": "API Testing Tool",
-        "description": "Test and debug APIs with an easy-to-use interface.",
+        "description": "Test and debug APIs with an easy-to-use interface. Send requests, analyze responses, and automate testing workflows to improve development efficiency.",
         "price": 11,
         "period": "monthly",
         "tag": "popular",
@@ -220,7 +248,9 @@
         "features": [
             "REST support",
             "Automated testing",
-            "Request history"
+            "Request history",
+            "Environment variables",
+            "Response validation"
         ],
         "icon": "🔗"
     }

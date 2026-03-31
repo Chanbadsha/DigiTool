@@ -34,15 +34,15 @@ const SectionIntro = () => {
         <input
           type="radio"
           name="my_tabs_1"
-          className={`tab text-black checked:text-white rounded-l-full rounded-r-full  checked:bg-linear-to-r  from-[#652ef7] to-[#8a1afb] flex-1 duration-75`}
+          className={`tab text-black checked:text-white rounded-l-full rounded-r-full  checked:bg-linear-to-r  from-[#652ef7] to-[#8a1afb] flex-1 duration-75 lg:text-xl font-bold`}
           aria-label="Products"
+          defaultChecked
         />
         <input
           type="radio"
           name="my_tabs_1"
-          className={`tab text-black checked:text-white  rounded-r-full rounded-l-full checked:bg-linear-to-r  from-[#652ef7] to-[#8a1afb] flex-1 duration-75 `}
+          className={`tab text-black checked:text-white  rounded-r-full rounded-l-full checked:bg-linear-to-r  to-[#652ef7] from-[#8a1afb] flex-1 duration-75 lg:text-xl font-bold `}
           aria-label="Cart"
-          defaultChecked
         />
       </div>
     </div>
