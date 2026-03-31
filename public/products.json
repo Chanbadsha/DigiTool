@@ -1,0 +1,227 @@
+[
+    {
+        "id": 1,
+        "name": "AI Resume Builder",
+        "description": "Create job-winning resumes with AI-powered suggestions and modern templates.",
+        "price": 12,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "ATS-friendly templates",
+            "AI suggestions",
+            "Export to PDF"
+        ],
+        "icon": "📄"
+    },
+    {
+        "id": 2,
+        "name": "Website Builder Pro",
+        "description": "Build responsive websites without coding using drag-and-drop tools.",
+        "price": 99,
+        "period": "yearly",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "Drag & drop editor",
+            "Free hosting",
+            "Custom domain"
+        ],
+        "icon": "🌐"
+    },
+    {
+        "id": 3,
+        "name": "SEO Optimizer Toolkit",
+        "description": "Boost your website ranking with advanced SEO insights and tracking.",
+        "price": 15,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Keyword tracking",
+            "Site audit",
+            "Competitor analysis"
+        ],
+        "icon": "🔍"
+    },
+    {
+        "id": 4,
+        "name": "Social Media Scheduler",
+        "description": "Plan, schedule, and automate posts across all major platforms.",
+        "price": 10,
+        "period": "monthly",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "Multi-platform posting",
+            "Calendar view",
+            "Analytics"
+        ],
+        "icon": "📅"
+    },
+    {
+        "id": 5,
+        "name": "Email Marketing Pro",
+        "description": "Create high-converting email campaigns with automation tools.",
+        "price": 20,
+        "period": "monthly",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "Automation workflows",
+            "Templates",
+            "Performance analytics"
+        ],
+        "icon": "📧"
+    },
+    {
+        "id": 6,
+        "name": "UI Design System Kit",
+        "description": "Pre-built UI components and design systems for faster development.",
+        "price": 49,
+        "period": "one-time",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Figma components",
+            "Dark mode",
+            "Reusable assets"
+        ],
+        "icon": "🎨"
+    },
+    {
+        "id": 7,
+        "name": "AI Content Generator",
+        "description": "Generate blogs, ads, and social media content in seconds.",
+        "price": 18,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Blog writing",
+            "Ad copy",
+            "Social captions"
+        ],
+        "icon": "🤖"
+    },
+    {
+        "id": 8,
+        "name": "Cloud Storage Plus",
+        "description": "Secure cloud storage with fast access and file sharing.",
+        "price": 8,
+        "period": "monthly",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "100GB storage",
+            "Secure sharing",
+            "Auto backup"
+        ],
+        "icon": "☁️"
+    },
+    {
+        "id": 9,
+        "name": "Freelancer Toolkit",
+        "description": "All-in-one toolkit for freelancers to manage clients and projects.",
+        "price": 39,
+        "period": "one-time",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "Invoice generator",
+            "Proposal templates",
+            "Client CRM"
+        ],
+        "icon": "🧑‍💻"
+    },
+    {
+        "id": 10,
+        "name": "Code Snippet Manager",
+        "description": "Organize and reuse your code snippets efficiently.",
+        "price": 7,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Syntax highlighting",
+            "Search & tags",
+            "Cloud sync"
+        ],
+        "icon": "💻"
+    },
+    {
+        "id": 11,
+        "name": "Analytics Dashboard Pro",
+        "description": "Track and visualize your business data in real-time.",
+        "price": 25,
+        "period": "monthly",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "Real-time data",
+            "Custom charts",
+            "Export reports"
+        ],
+        "icon": "📊"
+    },
+    {
+        "id": 12,
+        "name": "Password Manager Secure",
+        "description": "Store and manage your passwords with top-level encryption.",
+        "price": 5,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "End-to-end encryption",
+            "Auto-fill",
+            "Multi-device sync"
+        ],
+        "icon": "🔐"
+    },
+    {
+        "id": 13,
+        "name": "Online Course Builder",
+        "description": "Create and sell online courses easily.",
+        "price": 79,
+        "period": "yearly",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "Video hosting",
+            "Student management",
+            "Payment integration"
+        ],
+        "icon": "🎓"
+    },
+    {
+        "id": 14,
+        "name": "Project Management Tool",
+        "description": "Manage tasks, teams, and deadlines efficiently.",
+        "price": 14,
+        "period": "monthly",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "Kanban boards",
+            "Team collaboration",
+            "Deadline tracking"
+        ],
+        "icon": "📌"
+    },
+    {
+        "id": 15,
+        "name": "API Testing Tool",
+        "description": "Test and debug APIs with an easy-to-use interface.",
+        "price": 11,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "REST support",
+            "Automated testing",
+            "Request history"
+        ],
+        "icon": "🔗"
+    }
+]
