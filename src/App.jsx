@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import HeroSection from "./components/Hero/HeroSection";
 import ProductShowcase from "./components/ProductShowcase/ProductShowcase";
 import StatsSection from "./components/StatsSection/StatsSection";
+import StepSections from "./components/StepsSection/StepSections";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <HeroSection />
       <StatsSection />
       <ProductShowcase />
+      <StepSections />
     </>
   );
 }
