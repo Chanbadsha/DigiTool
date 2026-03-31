@@ -31,7 +31,7 @@ const navMenu = [
 ];
 const Header = () => {
   return (
-    <div className="navbar xl:px-60 py-2 bg-white text-black shadow-sm">
+    <div className="navbar 2xl:px-60 lg:px-20 py-2 bg-white text-black shadow-sm">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
