@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Starter",
+        "description": "Perfect for beginners who want access to essential digital tools.",
+        "price": 0,
+        "period": "monthly",
+        "tag": null,
+        "tagType": null,
+        "features": [
+            "Access to 10 free tools",
+            "Basic templates",
+            "Community support",
+            "1 project per month",
+            "Limited storage"
+        ],
+        "buttonText": "Get Started Free",
+        "buttonType": "primary"
+    },
+    {
+        "id": 2,
+        "name": "Pro",
+        "description": "Best for professionals who need advanced tools and unlimited access.",
+        "price": 29,
+        "period": "monthly",
+        "tag": "Most Popular",
+        "tagType": "popular",
+        "features": [
+            "Access to all premium tools",
+            "Unlimited templates",
+            "Priority support",
+            "Unlimited projects",
+            "Cloud sync & analytics"
+        ],
+        "buttonText": "Start Pro Trial",
+        "buttonType": "secondary"
+    },
+    {
+        "id": 3,
+        "name": "Enterprise",
+        "description": "For teams and businesses requiring advanced integrations and support.",
+        "price": 99,
+        "period": "monthly",
+        "tag": null,
+        "tagType": null,
+        "features": [
+            "Everything in Pro",
+            "Team collaboration",
+            "Custom integrations",
+            "Dedicated support",
+            "Custom branding"
+        ],
+        "buttonText": "Contact Sales",
+        "buttonType": "primary"
+    }
+]
