@@ -6,6 +6,7 @@ import PricingSection from "./components/PricingSection/PricingSection";
 import ProductShowcase from "./components/ProductShowcase/ProductShowcase";
 import StatsSection from "./components/StatsSection/StatsSection";
 import StepSections from "./components/StepsSection/StepSections";
+import TransformSection from "./components/TransformSection/TransformSection";
 const pricingInfoPromise = fetch("pricing.json").then((res) => res.json());
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Suspense>
         <PricingSection pricingInfoPromise={pricingInfoPromise} />
       </Suspense>
+      <TransformSection />
     </>
   );
 }

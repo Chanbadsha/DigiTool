@@ -4,7 +4,7 @@ import { Rocket, ShoppingBasket, UserPen } from "lucide-react";
 
 const StepSections = () => {
   return (
-    <div className="bg-gray-50 lg:py-24 py-6 2xl:px-60 lg:px-20 text-black ">
+    <div className="bg-gray-50 lg:py-24 py-6 2xl:px-60 lg:px-20 text-black  ">
       <div className="flex justify-center items-center flex-col gap-3">
         <h1 className="lg:text-5xl text-2xl md:text-4xl font-bold">
           Get Started in 3 Steps
