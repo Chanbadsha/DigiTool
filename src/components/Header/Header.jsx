@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "../NavBar/NavBar";
 import logo from "../../assets/digitool_logo.png";
 import { ShoppingCart } from "lucide-react";
@@ -29,9 +29,21 @@ const navMenu = [
     path: "/faq",
   },
 ];
-const Header = () => {
+const getCart = () => {
+  let cart = localStorage.getItem("cart");
+  return cart ? JSON.parse(cart) : [];
+};
+const Header = ({ cartValue, setCartValue }) => {
+  useEffect(() => {
+    const handleStorageChange = () => {
+      setCartValue(getCart().length);
+    };
+    window.addEventListener("storage", handleStorageChange);
+    return () => window.removeEventListener("storage", handleStorageChange);
+  }, []);
+
   return (
-    <div className="navbar 2xl:px-60 lg:px-20 py-2 bg-white text-black shadow-sm">
+    <div className="navbar 2xl:px-60 lg:px-20 py-2 bg-white text-black shadow-sm fixed top-0 left-0 z-10">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -80,7 +92,7 @@ const Header = () => {
       <div className="navbar-end flex gap-3">
         <span className="md:inline-block relative hidden">
           <span className="absolute -top-4 -right-2 text-green-500 font-bold">
-            +0
+            +{cartValue}
           </span>
           <ShoppingCart />
         </span>

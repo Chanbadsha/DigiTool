@@ -14,7 +14,7 @@ const PricingCard = ({ pricingInfo }) => {
     buttonText,
     buttonType,
   } = pricingInfo;
-  console.log(pricingInfo);
+  pricingInfo;
   return (
     <div
       className={` card max-w-96 ${tag ? "bg-linear-to-r text-white from-[#652ef7] to-[#8a1afb] " : "bg-gray-50  text-black"}  mt-12  shadow-sm`}
@@ -41,8 +41,8 @@ const PricingCard = ({ pricingInfo }) => {
           </span>
         </div>
         <ul className="mt-2 flex flex-col gap-2 text-xs xl:text-base  font-semibold">
-          {features.map((feature) => (
-            <li>
+          {features.map((feature, index) => (
+            <li key={index}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="size-4 lg:size-6 me-2 inline-block text-success"

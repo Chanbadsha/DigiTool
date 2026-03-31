@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import HeroSection from "./components/Hero/HeroSection";
@@ -9,19 +9,28 @@ import StepSections from "./components/StepsSection/StepSections";
 import TransformSection from "./components/TransformSection/TransformSection";
 import Footer from "./components/Footer/Footer";
 const pricingInfoPromise = fetch("pricing.json").then((res) => res.json());
+
+const getCart = () => {
+  let cart = localStorage.getItem("cart");
+  return cart ? JSON.parse(cart) : [];
+};
 function App() {
+  const [cartValue, setCartValue] = useState(getCart().length);
   return (
     <>
-      <Header />
-      <HeroSection />
-      <StatsSection />
-      <ProductShowcase />
-      <StepSections />
-      <Suspense>
+      {/* <Header cartValue={cartValue} setCartValue={setCartValue} />
+      <div className="mt-16">
+        {" "}
+        <HeroSection />
+      </div>
+      <StatsSection /> */}
+      <ProductShowcase cartValue={cartValue} setCartValue={setCartValue} />
+      {/* <StepSections /> */}
+      {/* <Suspense>
         <PricingSection pricingInfoPromise={pricingInfoPromise} />
       </Suspense>
       <TransformSection />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }

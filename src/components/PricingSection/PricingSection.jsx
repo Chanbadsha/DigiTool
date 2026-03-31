@@ -3,7 +3,7 @@ import PricingCard from "./PricingCard/PricingCard";
 
 const PricingSection = ({ pricingInfoPromise }) => {
   const pricingInfos = use(pricingInfoPromise);
-  //   console.log(prisingInfo);
+  //   (prisingInfo);
   return (
     <div className="bg-white lg:py-24 py-6 2xl:px-60 lg:px-20 text-black ">
       <div className="flex justify-center items-center flex-col gap-3">

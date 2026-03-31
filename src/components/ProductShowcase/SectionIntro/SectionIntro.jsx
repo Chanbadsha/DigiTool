@@ -1,4 +1,4 @@
-const SectionIntro = () => {
+const SectionIntro = ({ handleShowCart }) => {
   return (
     <div className="flex justify-center items-center flex-col gap-3">
       <h1 className="lg:text-5xl text-2xl md:text-4xl font-bold">
@@ -34,6 +34,7 @@ const SectionIntro = () => {
         <input
           type="radio"
           name="my_tabs_1"
+          onClick={handleShowCart}
           className={`tab text-black checked:text-white rounded-l-full rounded-r-full  checked:bg-linear-to-r  from-[#652ef7] to-[#8a1afb] flex-1 duration-75 lg:text-xl font-bold`}
           aria-label="Products"
           defaultChecked
@@ -41,6 +42,7 @@ const SectionIntro = () => {
         <input
           type="radio"
           name="my_tabs_1"
+          onClick={handleShowCart}
           className={`tab text-black checked:text-white  rounded-r-full rounded-l-full checked:bg-linear-to-r  to-[#652ef7] from-[#8a1afb] flex-1 duration-75 lg:text-xl font-bold `}
           aria-label="Cart"
         />

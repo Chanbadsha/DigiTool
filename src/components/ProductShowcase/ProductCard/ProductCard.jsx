@@ -4,8 +4,32 @@ const tagColors = {
   bestSeller: "bg-green-100 text-green-600",
   new: "bg-purple-100 text-purple-600",
 };
-const ProductCard = ({ product }) => {
-  console.log(product);
+
+const getCart = () => {
+  let cart = localStorage.getItem("cart");
+  return cart ? JSON.parse(cart) : [];
+};
+
+const saveCart = (cart) => {
+  localStorage.setItem("cart", JSON.stringify(cart));
+};
+
+const ProductCard = ({ product, setCartValue }) => {
+  const handleBuyNow = () => {
+    const cart = getCart();
+
+    const existingIndex = cart.findIndex((item) => item.id === product.id);
+
+    if (existingIndex !== -1) {
+      cart[existingIndex].quantity += 1;
+    } else {
+      cart.push({ ...product, quantity: 1 });
+    }
+
+    saveCart(cart);
+    setCartValue(cart.length);
+  };
+
   const { name, description, tag, price, period, features, icon } = product;
   return (
     <div className="card w-full bg-gray-50 text-black h-full shadow-sm">
@@ -30,8 +54,8 @@ const ProductCard = ({ product }) => {
           </span>
         </div>
         <ul className="mt-2 flex flex-col gap-2 text-xs lg:text-base  font-semibold">
-          {features.map((feature) => (
-            <li>
+          {features.map((feature, index) => (
+            <li key={index}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="size-5 lg:size-6 me-2 inline-block text-success"
@@ -51,7 +75,10 @@ const ProductCard = ({ product }) => {
           ))}
         </ul>
         <div className="mt-auto">
-          <button className="btn btn-primary btn-block mt-auto bg-linear-to-r text-white font-bold from-[#652ef7] to-[#8a1afb] px-2 py-2 rounded-full text-xs xs:hidden md:text-base ">
+          <button
+            className="btn btn-primary btn-block mt-auto bg-linear-to-r text-white font-bold from-[#652ef7] to-[#8a1afb] px-2 py-2 rounded-full text-xs xs:hidden md:text-base "
+            onClick={handleBuyNow}
+          >
             Buy Now
           </button>
         </div>
