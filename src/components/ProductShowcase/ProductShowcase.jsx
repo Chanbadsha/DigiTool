@@ -6,7 +6,7 @@ import CartSection from "../CartSection/CartSection";
 const productPromise = fetch("products.json").then((res) => res.json());
 
 const ProductShowcase = ({ cartValue, setCartValue }) => {
-  const [showCart, setShowCart] = useState(true);
+  const [showCart, setShowCart] = useState(false);
   const handleShowCart = () => {
     setShowCart(!showCart);
   };
@@ -21,7 +21,10 @@ const ProductShowcase = ({ cartValue, setCartValue }) => {
         fallback={<span className="loading loading-bars loading-xl"></span>}
       >
         {showCart ? (
-          <CartSection></CartSection>
+          <CartSection
+            cartValue={cartValue}
+            setCartValue={setCartValue}
+          ></CartSection>
         ) : (
           <ProductCards
             productPromise={productPromise}

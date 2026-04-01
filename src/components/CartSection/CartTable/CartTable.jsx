@@ -8,11 +8,12 @@ const saveCart = (cart) => {
   localStorage.setItem("cart", JSON.stringify(cart));
 };
 
-const CartTable = ({ cartInfo, setCarts }) => {
+const CartTable = ({ cartInfo, setCarts, setCartValue }) => {
   const handleCartProductDelete = () => {
     const carts = getCart();
     const cart = carts.filter((cart) => cartInfo.id !== cart.id);
     saveCart(cart);
+    setCartValue(cart.length);
     setCarts(cart);
   };
 

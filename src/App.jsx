@@ -18,19 +18,18 @@ function App() {
   const [cartValue, setCartValue] = useState(getCart().length);
   return (
     <>
-      {/* <Header cartValue={cartValue} setCartValue={setCartValue} />
+      <Header cartValue={cartValue} setCartValue={setCartValue} />
       <div className="mt-16">
-        {" "}
         <HeroSection />
       </div>
-      <StatsSection /> */}
+      <StatsSection />
       <ProductShowcase cartValue={cartValue} setCartValue={setCartValue} />
-      {/* <StepSections /> */}
-      {/* <Suspense>
+      <StepSections />
+      <Suspense>
         <PricingSection pricingInfoPromise={pricingInfoPromise} />
       </Suspense>
       <TransformSection />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }
