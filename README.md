@@ -1,16 +1,73 @@
-# React + Vite
+# 🛒 DigiTool – Digital Tools Buying Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Overview
 
-Currently, two official plugins are available:
+**DigiTool** is a modern and responsive eCommerce web application where users can explore and purchase digital tools like templates, software, and productivity resources.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Description
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+DigiTool allows users to browse digital products, view detailed features, and add them to a cart. The cart system uses **LocalStorage** to persist data. Users can remove items or proceed to checkout, which clears the cart. The UI is clean, interactive, and fully responsive.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies Used
+
+- ⚛️ React.js
+- 🎨 Tailwind CSS & DaisyUI
+- 📜 JavaScript (ES6+)
+- 🔔 React-Toastify
+- 📦 JSON (Product Data)
+
+---
+
+## ✨ Key Features
+
+### 🛒 1. Smart Cart System
+
+- Add products to cart
+- Remove individual items
+- Clear cart with "Proceed to Checkout"
+- Cart stored in LocalStorage
+
+---
+
+### 🔄 2. Dynamic Section Toggling
+
+- Toggle between **Products** and **Cart**
+- Default view shows products
+- Cart shows empty state when no items
+
+---
+
+### 🔔 3. Real-time Notifications
+
+- Toast messages for:
+  - Add to cart
+  - Remove item
+  - Checkout
+- Improves user experience
+
+---
+
+## 📱 Responsive Design
+
+- Fully responsive (Mobile, Tablet, Desktop)
+- Clean and modern UI
+
+---
+
+## 📦 Additional Highlights
+
+- Product cards with features and pricing
+- Navbar with dynamic cart count
+- Sections: Banner, Stats, Steps, Pricing, Footer
+
+---
+
+## 🔗 Conclusion
+
+DigiTool is a complete frontend eCommerce project demonstrating real-world use of **React, LocalStorage, and modern UI design**.
+
+---

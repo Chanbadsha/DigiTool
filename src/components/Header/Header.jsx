@@ -6,27 +6,27 @@ const navMenu = [
   {
     id: 1,
     name: "Products",
-    path: "/products",
+    path: "/#",
   },
   {
     id: 2,
     name: "Features",
-    path: "/features",
+    path: "/#",
   },
   {
     id: 3,
     name: "Pricing",
-    path: "/pricing",
+    path: "/#",
   },
   {
     id: 4,
     name: "Testimonials",
-    path: "/testimonials",
+    path: "/#",
   },
   {
     id: 5,
     name: "FAQ",
-    path: "/faq",
+    path: "/#",
   },
 ];
 const getCart = () => {
@@ -96,7 +96,7 @@ const Header = ({ cartValue, setCartValue }) => {
           </span>
           <ShoppingCart />
         </span>
-        <a href="/login">Login</a>
+        <a href="#">Login</a>
         <a className="bg-linear-to-r text-white font-bold from-[#652ef7] to-[#8a1afb] px-2 py-2 rounded-full text-xs xs:hidden md:text-base ">
           Get Started
         </a>
