@@ -1,4 +1,5 @@
 import React from "react";
+import toast from "react-hot-toast";
 const tagColors = {
   popular: "bg-blue-100 text-blue-600",
   bestSeller: "bg-green-100 text-green-600",
@@ -22,8 +23,10 @@ const ProductCard = ({ product, setCartValue }) => {
 
     if (existingIndex !== -1) {
       cart[existingIndex].quantity += 1;
+      toast("Item already in your cart 😊");
     } else {
       cart.push({ ...product, quantity: 1 });
+      toast.success("Product added to your cart 🛒");
     }
 
     saveCart(cart);

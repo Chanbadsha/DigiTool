@@ -1,4 +1,5 @@
 import { Trash } from "lucide-react";
+import toast from "react-hot-toast";
 
 const getCart = () => {
   let cart = localStorage.getItem("cart");
@@ -15,6 +16,7 @@ const CartTable = ({ cartInfo, setCarts, setCartValue }) => {
     saveCart(cart);
     setCartValue(cart.length);
     setCarts(cart);
+    toast.success("Product removed from your cart 🗑️");
   };
 
   return (

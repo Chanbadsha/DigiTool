@@ -8,6 +8,7 @@ import StatsSection from "./components/StatsSection/StatsSection";
 import StepSections from "./components/StepsSection/StepSections";
 import TransformSection from "./components/TransformSection/TransformSection";
 import Footer from "./components/Footer/Footer";
+import { Toaster } from "react-hot-toast";
 const pricingInfoPromise = fetch("pricing.json").then((res) => res.json());
 
 const getCart = () => {
@@ -18,6 +19,8 @@ function App() {
   const [cartValue, setCartValue] = useState(getCart().length);
   return (
     <>
+      <Toaster />
+
       <Header cartValue={cartValue} setCartValue={setCartValue} />
       <div className="mt-16">
         <HeroSection />

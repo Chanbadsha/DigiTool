@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CartTable from "./CartTable/CartTable";
+import toast from "react-hot-toast";
 const getCart = () => {
   let cart = localStorage.getItem("cart");
   return cart ? JSON.parse(cart) : [];
@@ -16,6 +17,14 @@ const CartSection = ({ cartValue, setCartValue }) => {
   const handleProceedCheckout = () => {
     localStorage.clear("cart");
     setCarts(getCart());
+    setCartValue(getCart().length);
+    toast.success("Your order has been placed successfully 🎉");
+  };
+  const handleCartClear = () => {
+    localStorage.clear("cart");
+    setCarts(getCart());
+    setCartValue(getCart().length);
+    toast.success("Your cart is now empty");
   };
 
   return (
@@ -34,16 +43,26 @@ const CartSection = ({ cartValue, setCartValue }) => {
               ></CartTable>
             ))}
           </div>
-          <p className="flex justify-between">
-            <span>Total:</span> <span>${price}</span>
-          </p>
-          <div className="flex justify-center items-center mx-20 ">
-            <button
-              onClick={handleProceedCheckout}
-              className="bg-linear-to-r  from-[#652ef7] to-[#8a1afb] px-4 md:py-2 rounded-full text-xs  md:text-base hover:from-white hover:to-white btn   text-white hover:text-black font-bold hover:border-t-2  w-full"
-            >
-              Proceed to Checkout
-            </button>
+
+          <div className="flex justify-around items-center flex-col md:flex-row gap-4">
+            <p className="flex justify-between gap-2 font-bold text-xl md:text-2xl">
+              <span>Total:</span> <span>${price}</span>
+            </p>
+
+            <div className="flex gap-2 justify-center md:justify-start">
+              <button
+                onClick={handleProceedCheckout}
+                className="bg-linear-to-r  from-[#652ef7] to-[#8a1afb] px-4 md:py-2 rounded-full text-xs  md:text-base hover:from-white hover:to-white btn   text-white hover:text-black font-bold hover:border-t-2 "
+              >
+                Proceed to Checkout
+              </button>
+              <button
+                onClick={handleCartClear}
+                className="hover:bg-linear-to-r  from-[#652ef7] to-[#8a1afb] px-4 md:py-2  rounded-full text-xs  md:text-base btn  text-black font-bold btn-outline hover:text-white hover:border-none duration-500  "
+              >
+                Clear Cart
+              </button>
+            </div>
           </div>
         </div>
       ) : (
