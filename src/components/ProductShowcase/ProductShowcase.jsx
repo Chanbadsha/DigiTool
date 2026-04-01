@@ -2,6 +2,7 @@ import React, { Suspense, useState } from "react";
 import SectionIntro from "./SectionIntro/SectionIntro";
 import ProductCards from "./ProductCardsSection/ProductCards";
 import CartSection from "../CartSection/CartSection";
+import Loading from "../../utils/Loading";
 
 const productPromise = fetch("products.json").then((res) => res.json());
 
@@ -17,9 +18,7 @@ const ProductShowcase = ({ cartValue, setCartValue }) => {
         <SectionIntro handleShowCart={handleShowCart} />
       </div>
 
-      <Suspense
-        fallback={<span className="loading loading-bars loading-xl"></span>}
-      >
+      <Suspense fallback={<Loading></Loading>}>
         {showCart ? (
           <CartSection
             cartValue={cartValue}

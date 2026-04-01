@@ -9,6 +9,7 @@ import StepSections from "./components/StepsSection/StepSections";
 import TransformSection from "./components/TransformSection/TransformSection";
 import Footer from "./components/Footer/Footer";
 import { Toaster } from "react-hot-toast";
+import Loading from "./utils/Loading";
 const pricingInfoPromise = fetch("pricing.json").then((res) => res.json());
 
 const getCart = () => {
@@ -28,7 +29,7 @@ function App() {
       <StatsSection />
       <ProductShowcase cartValue={cartValue} setCartValue={setCartValue} />
       <StepSections />
-      <Suspense>
+      <Suspense fallback={<Loading></Loading>}>
         <PricingSection pricingInfoPromise={pricingInfoPromise} />
       </Suspense>
       <TransformSection />
