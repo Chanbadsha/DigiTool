@@ -1,30 +1,30 @@
 # 🛒 DigiTool – Digital Tools Buying Website
 
-## 📌 Project Overview
+## Project Overview
 
 **DigiTool** is a modern and responsive eCommerce web application where users can explore and purchase digital tools like templates, software, and productivity resources.
 
 ---
 
-## 🚀 Description
+## Description
 
 DigiTool allows users to browse digital products, view detailed features, and add them to a cart. The cart system uses **LocalStorage** to persist data. Users can remove items or proceed to checkout, which clears the cart. The UI is clean, interactive, and fully responsive.
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
-- ⚛️ React.js
-- 🎨 Tailwind CSS & DaisyUI
-- 📜 JavaScript (ES6+)
-- 🔔 React-Toastify
-- 📦 JSON (Product Data)
+- React.js
+- Tailwind CSS & DaisyUI
+- JavaScript (ES6+)
+- React-Toastify
+- JSON (Product Data)
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-### 🛒 1. Smart Cart System
+### 1. Smart Cart System
 
 - Add products to cart
 - Remove individual items
@@ -33,7 +33,7 @@ DigiTool allows users to browse digital products, view detailed features, and ad
 
 ---
 
-### 🔄 2. Dynamic Section Toggling
+### 2. Dynamic Section Toggling
 
 - Toggle between **Products** and **Cart**
 - Default view shows products
@@ -41,7 +41,7 @@ DigiTool allows users to browse digital products, view detailed features, and ad
 
 ---
 
-### 🔔 3. Real-time Notifications
+### 3. Real-time Notifications
 
 - Toast messages for:
   - Add to cart
@@ -51,14 +51,14 @@ DigiTool allows users to browse digital products, view detailed features, and ad
 
 ---
 
-## 📱 Responsive Design
+## Responsive Design
 
 - Fully responsive (Mobile, Tablet, Desktop)
 - Clean and modern UI
 
 ---
 
-## 📦 Additional Highlights
+## Additional Highlights
 
 - Product cards with features and pricing
 - Navbar with dynamic cart count
@@ -66,7 +66,7 @@ DigiTool allows users to browse digital products, view detailed features, and ad
 
 ---
 
-## 🔗 Conclusion
+## Conclusion
 
 DigiTool is a complete frontend eCommerce project demonstrating real-world use of **React, LocalStorage, and modern UI design**.
 

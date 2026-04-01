@@ -67,7 +67,6 @@ const CartSection = ({ cartValue, setCartValue }) => {
         </div>
       ) : (
         <div className="w-full flex flex-col items-center justify-center py-20 bg-gray-50 border rounded-xl">
-          {/* Icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-16 h-16 text-gray-400 mb-4"
@@ -83,18 +82,15 @@ const CartSection = ({ cartValue, setCartValue }) => {
             />
           </svg>
 
-          {/* Title */}
           <h2 className="text-xl font-bold text-gray-700">
             Your Cart is Empty
           </h2>
 
-          {/* Description */}
           <p className="text-gray-500 mt-2 text-center max-w-md px-2">
             Looks like you haven’t added anything yet. Start shopping to fill
             your cart with amazing products!
           </p>
 
-          {/* Button */}
           <button
             onClick={() => (window.location.href = "/")}
             className="mt-6 px-6 py-2 rounded-full bg-linear-to-r from-purple-600 to-indigo-600 text-white font-semibold hover:scale-105 transition"
