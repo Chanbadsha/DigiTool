@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable react-hooks/set-state-in-effect */
+import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 const tagColors = {
   popular: "bg-blue-100 text-blue-600",
@@ -16,6 +17,20 @@ const saveCart = (cart) => {
 };
 
 const ProductCard = ({ product, setCartValue }) => {
+  const [btnText, setBtnText] = useState("Buy Now");
+
+  useEffect(() => {
+    const cart = getCart();
+
+    const exists = cart.find((item) => item.id === product.id);
+
+    if (exists) {
+      setBtnText("Added to cart");
+    } else {
+      setBtnText("Buy Now");
+    }
+  }, [product.id]);
+
   const handleBuyNow = () => {
     const cart = getCart();
 
@@ -25,6 +40,7 @@ const ProductCard = ({ product, setCartValue }) => {
       cart[existingIndex].quantity += 1;
       toast("Item already in your cart 😊");
     } else {
+      setBtnText("Added to cart");
       cart.push({ ...product, quantity: 1 });
       toast.success("Product added to your cart 🛒");
     }
@@ -82,7 +98,7 @@ const ProductCard = ({ product, setCartValue }) => {
             className="btn btn-primary btn-block mt-auto bg-linear-to-r text-white font-bold from-[#652ef7] to-[#8a1afb] px-2 py-2 rounded-full text-xs xs:hidden md:text-base "
             onClick={handleBuyNow}
           >
-            Buy Now
+            {btnText}
           </button>
         </div>
       </div>
