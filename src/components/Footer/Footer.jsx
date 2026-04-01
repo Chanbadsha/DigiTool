@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer sm:footer-horizontal lg:py-24 py-6 2xl:px-60 lg:px-20 text-base-content p-10">
+    <footer className="footer sm:footer-horizontal lg:py-24 py-6 2xl:px-60 lg:px-20  text-white p-10 bg-[#101727]">
       <div className="">
         <h2 className="text-5xl font-bold">DigiTools</h2>
         <p className="max-w-sm text-left">
